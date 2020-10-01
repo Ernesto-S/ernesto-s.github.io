@@ -3,120 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Here you'll be able to take a peek into the life of Erensto">
-    <title>Ernesto's Blog</title>
+    <title>Ernesto's Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 <body>
-    <h1>Ernesto Salcedo First Blog</h1>
-    <img src="static/images/profile.jpg" alt="Picture of Ernesto at the Seatlle aquarium with an octopus" width=300 height= 300>
-    <h2>Bio</h2>
-    <p>
-        My name is Ernesto Salcedo and I am a first generation Latino engineering graduate. I grew up in a low income household in the central valley and I helped my family by working in the fields at age 11. I felt the pain of having a labor intensive job and when I turned 18 I decided to pursue higher education at CSU Sacramento. When I was choosing my major, I remember thinking that I liked math and that I didn't want to work in the fields ever again. After looking at the list of majors I was attracted to Electrical and Electronics Engineering and I started my journey. It wasn’t easy but I persevered. The years went by and my interest varied from biomedical, control systems and electronics. It wasn’t until the last year at college that I explored electives like machine vision and robotics and I was hooked. I realized then that it was programming that excited me. I had little to no experience since programming was not part of my curriculum. When I programmed on Arduino I was able to get things to work, but I did not have a good foundation which led to several sleepless nights. After I graduated, I looked for positions relating to machine vision, robotics, or control systems. I was able to land a Process Engineer role at a Lidar company and I continued pursuing programming. I had a positive impact by helping manufacture the future of machine vision and I shared my experience and knowledge with my peers. Unfortunately, I have been let go from that company due to COVID-19. Now, I want to gain a solid programming foundation and I believe Coding Dojo will help me reach this goal. I want to join the future of AI/Robotics/Sensing and continue helping others. 
-    </p>
+    <div class="container">
+        <!-- Navbar -->
+        <nav class="row navbar navbar-expand-md navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Ernesto Salcedo</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <div>
-        <h3>Timeline of significant times in my life</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th>Event</th>
-                    <th>Description</th>
-                    <th>Date</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Birthday</td>
-                    <td>I was born in Yuba City</td>
-                    <td>Feb 11, 1993</td>                    
-                </tr>
-                <tr>
-                    <td>High School Graduation</td>
-                    <td>I gratuated from Sierra High School</td>
-                    <td>2011</td>
-                </tr>
-                <tr>
-                    <td>College Graduation</td>
-                    <td>I gratuated from Sac State with a BS in Electrical Engineering</td>
-                    <td>2016</td>
-                </tr>
-                <tr>
-                    <td>First Job Out of College</td>
-                    <td>Worked at a Lidar manufacturing company</td>
-                    <td>2017</td>
-                </tr>
-                <tr>
-                    <td>Proposed</td>
-                    <td>Planned a week long trip to Portland Oregan and propposed to my girl friend of 4 years.</td>
-                    <td>May 2019</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item">
+                        <a class="nav-link text-success" href="#">About <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-success" href="#">Projects <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-success" href="#">Skills <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-success" href="#">Education <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-success" href="#">Experience <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-success" href="#">Courses <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-success" href="#">Contact <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-    <div>
-        <h3>Goals for the future</h3>
-        <ol>
-            <li>Gain a strong programming foundation with Python at Coding Dojo</li>
-            <li>Find a job that challenges me</li>
-            <li>Get married to my fiance </li>
-        </ol>
-    </div>
-    <div>
-        <h3>Hobbies</h3>
-        <ul>
-            <li>Spending time with my fiance and our dog Kowga</li>
-            <li>Super Smash Bros Ultimate</li>
-            <li>Learning new skills</li>
-            <li>Watching TV</li>
-        </ul>
-    </div>
-    <div>
-        <p>If you are interested in connecting here is a link to my LinkedIn profile</p>
-        <a href="https://www.linkedin.com/in/ernesto-salcedo/">Ernesto's LinkedIn</a>
-    </div>
-    <form action="/create_new_fan">
-        <h3>Please take this short survey to become a fan of Ernesto</h3>
-        <div>
-            <label for="email">Email: </label>
-            <input type="text" name = "email" id = "email">
-        </div>
-        <div>
-            <input type="radio" name="subscribe" id="yes_email" value = "yes email">
-            <label for="yes_email">Yes, send me emails I'll be your fan.</label>
-            
-            <input type="radio" name="subscribe" id="no_email" value = "no email">
-            <label for="no_email">No, I don't need emails to be your fan.</label>
-        </div>
-        <div>
-            <p>What do you want to do when you hangout with Ernesto?</p>
-            <select name="hangout" id="hangout">
-                <option value="doggy_hangout">Doggy Hangout</option>
-                <option value="smash">Play Smash</option>
-                <option value="code">Coding Hangout</option>
-                <option value="tv">Watching TV</option>
-            </select>
-        </div>
-        <div>
-            <p>What do you want to know more about?</p>
-            
-            <input type="checkbox" name="details" id="relationship">
-            <label for="relationship">Ernesto's Relationship</label>
-            
-            <input type="checkbox" name="details" id="dog">
-            <label for="dog">Ernesto's Dog</label>
-            
-            <input type="checkbox" name="details" id="videogames">
-            <label for="videogames">Ernesto's Video Games Played</label>
-            
-            <input type="checkbox" name="details" id="coding">
-            <label for="coding">Ernesto's Coding Experience</label>
-            
-            <input type="checkbox" name="details" id="tv_watching">
-            <label for="tv_watching">Ernesto's TV Watching</label>
+        <!-- About -->
+        <div class="container bg-light">
+            <h3 class="text-center mt-2 bg-light">About</h3>
+            <div class="row">
+                <div class="col-4 pr-2">
+                    <img class="d-block img-fluid rounded-circle" src="static/images/profile.jpg" alt="Picture of Ernesto at the Seatlle aquarium with an octopus in the background">
+                </div>
+                <div class="col">
+                    <p> <br>
+                        My name is Ernesto Salcedo and I am a first generation Latino engineer. I grew up in a low income household and growing up I didn't have many mentors. But I did know one thing... I did not want to continue working in the fields. <br> <br> With some hard work and many sleepless nights I was able navigate through the higher education system and graduate with my Bachelors in Electrical and Electronics Engineering from CSU-Sacramento. I also continued my education with programming in a Python Full Stack coding boot camp from Coding Dojo. <br><br> For me I didn't realize how much I loved programming until after college. There is something undeniably satisfying about bringing to life your imagination through programming.
+                    </p>
+                </div>
+            </div>
         </div>
 
-        <input type="submit" value="submit">
-    
-    </form>
+        <!-- Projects -->
+        <div class="container bg-light">
+            <h3 class="text-center mt-2">Projects</h3>
+            <div class="row">
+                <div class="col">SV Dog Sitters Website</div>
+            </div>
+            <div class="row">
+                <div class="col">Virtual Escape Room</div>
+            </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="container bg-light">
+            <h3 class="text-center mt-2">Skills</h3>
+            <div class="row">
+                <div class="col">Python</div>
+            </div>
+        </div>
+        
+        <!-- Education -->
+        <div class="container bg-light">
+            <h3 class="text-center mt-2">Education</h3>
+            <div class="row">
+                <div class="col">Coding Dojo</div>
+            </div>
+        </div>
+
+        <!-- Experience -->
+        <div class="container bg-light">
+            <h3 class="text-center mt-2">Experience</h3>
+            <div class="row">
+                <div class="col">Velodyne</div>
+            </div>
+        </div>
+
+        <!-- Courses -->
+        <div class="container bg-light">
+            <h3 class="text-center mt-2">Courses</h3>
+            <div class="row">
+                <div class="col">Web Fundamentals</div>
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="container bg-light">
+            <h3 class="text-center mt-2">Contact</h3>
+            <div class="row">
+                <div class="col">Resume</div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 </html>
